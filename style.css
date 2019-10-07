@@ -1,0 +1,87 @@
+/* TWITCH API CSS */
+
+:root {
+    --theme: white;
+    --txt: #333;
+    --title: #555;
+    --light: white;
+    --bg: rgb(184, 175, 98);
+    --wrapper: rgb(238, 191, 38);
+    --border: #333;
+
+    --all: #999;
+    --online: green;
+    --offline: darkred;
+
+    --shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+html {
+    background-color: var(--bg);
+}
+
+body {
+    margin: 25px;
+    line-height: 26px;
+}
+
+.wrapper {
+    width: 950px;
+    margin: auto;
+    background-color: var(--wrapper);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.title {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.btn {
+    display: block;
+}
+
+.btn .all {
+    display: block;
+    width: 50px;
+    color: var(--light);
+    background-color: var(--all);
+}
+
+.btn .online {
+    display: block;
+    width: 50px;
+    color: var(--light);
+    background-color: var(--online);
+}
+
+.btn .offline {
+    display: block;
+    width: 50px;
+    color: var(--light);
+    background-color: var(--offline);
+}
+
+/* Header & Footer CSS */
+.header {
+    color: var(--title);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.divide-line-header {
+    color: var(--titles);
+    margin-top: 25px;
+    width: 25%;
+ }
+
+.footer {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--titles);
+    background-color: var(--sw);
+    text-align: center;
+ }

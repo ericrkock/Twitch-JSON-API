@@ -5,13 +5,11 @@
     --txt: #333;
     --title: #555;
     --light: white;
-    --bg: rgb(184, 175, 98);
-    --wrapper: rgb(238, 191, 38);
-    --border: #333;
+    --bg: rgb(172, 204, 252);
+    --wrapper: rgb(255, 255, 255);
+    --border: rgb(100, 103, 255);
 
-    --all: #999;
-    --online: green;
-    --offline: darkred;
+    --button: rgb(108, 110, 231);
 
     --shadow: 0 3px 6px rgba(0,0,0,0.9);
 }
@@ -26,7 +24,7 @@ body {
 }
 
 .wrapper {
-    width: 950px;
+    width: 450px;
     margin: auto;
     background-color: var(--wrapper);
     border: 1px solid var(--border);
@@ -39,28 +37,33 @@ body {
 }
 
 .btn {
-    display: block;
+    display: flex;
 }
 
-.btn .all {
-    display: block;
-    width: 50px;
+.btn .button {
+    display: inline-block;
+    margin: 0 1px 0 0;
+    padding: 15px 39px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
     color: var(--light);
-    background-color: var(--all);
+    background-color: var(--button);
+    border: none;
+    cursor: pointer;
 }
 
-.btn .online {
-    display: block;
-    width: 50px;
-    color: var(--light);
-    background-color: var(--online);
+.search {
+    margin: 15px 5px 15px 8px;
 }
 
-.btn .offline {
-    display: block;
-    width: 50px;
-    color: var(--light);
-    background-color: var(--offline);
+input {
+    width: 95%;
+    padding-left: 15px;
+    background-color: lightgray;
+    border: 1px solid grey;
+    border-radius: 15px;
 }
 
 /* Header & Footer CSS */
